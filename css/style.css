@@ -1,0 +1,196 @@
+/* Copyright © 2015 Lewis Hunt. All rights reserved. */
+
+/* colors and fonts - should eventually be stored as vars in css preprocessor */
+
+.color-dark {background-color: #3b5b86;}
+.color-light {background-color: #557ebb;}
+.color-background {background-color: #ececec;}
+.color-background-light {background-color: #f7f7f7;}
+.color-box-borders {color: #d9d9d9;}
+.color-inactive-arrow {color: #d9d9d9;}  
+.color-active-arrow {color: #202020;}
+
+
+/* fonts */
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/source-sans-pro/SourceSansPro-Light.otf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/source-sans-pro/SourceSansPro-Bold.otf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/source-sans-pro/SourceSansPro-It.otf');
+	font-style: italic;
+}
+
+.font-store-title {
+  font-family: SourceSansPro, sans-serif; 
+  font-size: 15px;
+  font-weight: bold;
+  color:#557ebb;
+  padding:20px 15px;
+}
+
+.nav a, body {
+  font-family: SourceSansPro, sans-serif; 
+  font-size: 15px;
+  color:#202020;
+}
+
+.font-italic {
+  font-family: SourceSansPro, sans-serif; 
+  font-size: 15px;
+  font-style: italic;
+  color:#a3a3a3;
+}
+
+/* top left logo area */
+
+.box-logo {
+	width:100%;
+	height:95px;
+	min-height: 95px;
+	/*background-image: url("../img/Logo.png");*/
+    background-size: 33px 48px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+.box-store-title {
+	width:100%;
+	height:60px;
+	min-height: 60px;
+}
+
+/* right hand content area */
+
+#out-of-stock-products {
+	margin: 20px;
+}
+
+#out-of-stock-products > div {
+	margin: 8px 20px;
+	width: 500px;
+}
+
+#out-of-stock-products input[type="text"] {
+	padding-left:14px;
+	border:0;
+	width:100%;
+	height:34px;
+}
+
+#out-of-stock-products .radio {
+	background-color:#fff;
+	width:100%;
+	border: 1px solid #d9d9d9;
+}
+
+
+/* override Angular Material styles for content area  */
+
+.md-toolbar-tools h1 {
+  font-family: SourceSansPro, sans-serif; 
+  font-size: 24px;
+  font-weight: 300;
+  color:#202020;
+  margin: inherit;
+}
+
+md-sidenav, md-sidenav.md-locked-open {
+    width: 248px;
+    min-width: 248px;
+    max-width: 248px;
+}
+
+md-toolbar.md-default-theme, div.md-toolbar-tools {
+    background-color: rgb(255,255,255);
+    color: rgba(0,0,0,1);
+    height: 95px;
+    min-height: 95px;
+    max-height: 95px;
+    padding-left: 18px;
+}
+
+md-toolbar.md-default-theme md-icon {
+    color: rgba(0,0,0,0.87);
+}
+
+md-content.md-default-theme {
+	background-color: #ececec;
+}
+
+md-radio-group.md-default-theme:not([disabled]) .md-primary .md-on, md-radio-group.md-default-theme:not([disabled]).md-primary .md-on, md-radio-button.md-default-theme:not([disabled]) .md-primary .md-on, md-radio-button.md-default-theme:not([disabled]).md-primary .md-on {
+    background-color: #557ebb;
+
+}
+
+md-radio-group.md-default-theme:not([disabled]) .md-primary .md-checked .md-off, md-radio-group.md-default-theme:not([disabled]) .md-primary.md-checked .md-off, md-radio-group.md-default-theme:not([disabled]).md-primary .md-checked .md-off, md-radio-group.md-default-theme:not([disabled]).md-primary.md-checked .md-off, md-radio-button.md-default-theme:not([disabled]) .md-primary .md-checked .md-off, md-radio-button.md-default-theme:not([disabled]) .md-primary.md-checked .md-off, md-radio-button.md-default-theme:not([disabled]).md-primary .md-checked .md-off, md-radio-button.md-default-theme:not([disabled]).md-primary.md-checked .md-off {
+    border-color: #3b5b86;    
+}
+
+
+
+/* override Bootstrap styles for left accordion sidenav */ 
+#accordion{
+	background-color: #fff;
+}
+
+#accordion .panel > a:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings'; 
+    content: "\e259";
+    float: right;
+    color: #202020;
+}
+#accordion .panel > a.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e258";
+    color: #d9d9d9;
+}
+
+#accordion a {
+	padding:15px;
+}
+#accordion ul li > a {
+	padding-left:30px;
+}
+
+#accordion a:hover, #accordion a:focus, #accordion a.selected  {
+	background-color: #ececec;
+}
+
+#accordion li:not(.panel) > a:focus:after, #accordion a.selected:after {
+	font-family: 'Glyphicons Halflings';
+    content: "\e258";
+    float: right; 
+    color: #202020;
+}
+
+/* #accordion .nav-stacked>li+li */
+#accordion li.panel {
+	margin: 0;
+}
+
+
+#accordion li.panel.noborder {
+	border: none;
+	box-shadow: none;
+}
+#accordion li.panel.noborder > .panel-heading {
+	border: 1px solid #dddddd;
+	border-radius: 0;
+}
