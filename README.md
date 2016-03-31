@@ -4,5 +4,6 @@ The beginnings of a responsive AngularJS Admin Dashboard utilizing Bootstrap and
 Demo: http://lewhunt.github.io/angularjs-admin-dashboard
 
 ## Example
-Screengrab example showing responsive layouts in mobile and tablet modes:
+Screengrab showing responsive layout in mobile and tablet modes:
+
 ![Example](dashboard.gif)
