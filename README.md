@@ -1,5 +1,5 @@
 # AngularJS Admin Dashboard
-The beginnings of a responsive AngularJS Admin Dashboard utilizing Bootstrap and Material components. Consider following or giving me a star if you like this and are interested in it being developed further...
+The beginnings of a responsive AngularJS Admin Dashboard utilizing Bootstrap and Material components.
 
 ![Example](dashboard.gif)
 
