@@ -142,12 +142,12 @@ md-radio-group.md-default-theme:not([disabled]) .md-primary .md-checked .md-off,
 }
 
 .author-info {
-	position: absolute;
-	bottom:5px;
+	padding-left:20px;
+
 }
 
 .author-info iframe {
-	margin-bottom:-5px;
+	padding-left:5px;
 }
 
 
