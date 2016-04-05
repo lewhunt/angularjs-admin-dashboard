@@ -49,11 +49,11 @@
 						</ul>
 					</li>
 					
-					<li class="panel noborder"> <a data-toggle="collapse" data-parent="#accordion" href="#thirdCategory">Store configuration</a>
+					<li class="panel noborder"> <a data-toggle="collapse" data-parent="#accordion" href="#thirdCategory">Site configuration</a>
 
 						<ul id="thirdCategory" class="collapse in nav nav-stacked color-background-light">
 							<li><a href="#">Filters</a></li>
-							<li><a class="selected" href="index.html">Out of stock products</a></li>
+							<li><a class="selected" href="index.html">Out of stock items</a></li>
 							<li><a href="#">Style</a></li>
 						</ul>
 					</li>
@@ -85,7 +85,7 @@
 					<md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button">
 					  <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
 					</md-button>
-					<h1>Out of stock products</h1>
+					<h1>Out of stock items</h1>
 				  </div>
 				</md-toolbar> 
 				
@@ -97,26 +97,26 @@
 							<!-- Note that radio buttons are styled slightly different to the proposed design - for speed, browser stability and appearance on mobile -->
 							<md-radio-group ng-model="data.radioGroup1">
 								<div class="radio">						 
-								  <md-radio-button value="option1" class="md-primary">Include in search results together with in-stock products</md-radio-button>
+								  <md-radio-button value="option1" class="md-primary">Include in search results together with in-stock items</md-radio-button>
 								</div>
 								<div class="radio">
 									<md-radio-button value="option2" class="md-primary">Include in results and display at bottom of search results</md-radio-button>
 								</div>
 								<div class="radio">
-								  <md-radio-button value="option3" class="md-primary">Do not include (i.e. hide "out of stock" products)</md-radio-button>  
+								  <md-radio-button value="option3" class="md-primary">Do not include (i.e. hide "out of stock" items)</md-radio-button>  
 								</div>
 							</md-radio-group>
 						
 							<br/>
 						
-							Label
+							Label  <span class="font-italic">(displayed in search results)</span>
 							<div class="radio">
 							  <input type="text" name="dashboard-text" placeholder="Enter your out of stock message here" value="Temporarily out of stock">
 							</div>
 						</form>
 						
 						<div class="author-info font-italic">
-							Like the app? Support me: <iframe src="https://ghbtns.com/github-btn.html?user=lewhunt&repo=angularjs-admin-dashboard&type=star&count=true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+							Like this demo? Support me: <iframe src="https://ghbtns.com/github-btn.html?user=lewhunt&repo=angularjs-admin-dashboard&type=star&count=false" frameborder="0" scrolling="0" width="60px" height="20px"></iframe>
 						</div>
 					</div>
 			
