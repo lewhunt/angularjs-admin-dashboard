@@ -141,6 +141,15 @@ md-radio-group.md-default-theme:not([disabled]) .md-primary .md-checked .md-off,
     border-color: #3b5b86;    
 }
 
+.author-info {
+	position: absolute;
+	bottom:5px;
+}
+
+.author-info iframe {
+	margin-bottom:-5px;
+}
+
 
 
 /* override Bootstrap styles for left accordion sidenav */ 
